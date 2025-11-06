@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Code Empath — Student Hub</title>
+    <meta name="description" content="Code Empath — mentorship, notes, summaries, events and community for college students." />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="indexstyle.css">
+</head>
+<body>
+    <header>
+        <div class="brand">
+            <div class="logo" aria-hidden="true">CE</div>
+                <div>
+                    <div class="title">Code Empath</div>
+                    <div class="subtitle">College hub — Mentors · Notes · Events · AI</div>
+                </div>
+        </div>
+
+        <nav aria-label="Main navigation">
+            <a class="nav-link" href="mentorship.html">Mentorship Chat</a>
+            <a class="nav-link" href="updates.html">Updates & Notes</a>
+            <a class="nav-link" href="summarizer.html">Smart Summarizer</a>
+            <a class="nav-link" href="events.html">Events & Internships</a>
+            <a class="nav-link" href="community.html">Community Chat</a>
+        </nav>
+
+        <div class="actions">
+            <a class="btn" href="calendar.html" title="Calendar">Calendar</a>
+            <button id="theme-toggle" class="btn" aria-pressed="false" title="Toggle dark mode">🌙 Dark</button>
+            <a class="btn primary" href="login.html" title="Sign in">Sign in / Sign up</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-card" role="region" aria-labelledby="hero-heading">
+                <div class="kicker">For students • By students</div>
+                <h1 id="hero-heading">Everything you need for college life — mentorship, notes, events and AI tools.</h1>
+                <p class="lead">Connect with seniors, find curated notes, auto-summarize long resources, and keep up with hackathons & internships — all in one place.</p>
+
+                <div class="cta-row">
+                    <a class="btn primary" href="mentorship.html">Start Mentorship</a>
+                    <a class="btn" href="summarizer.html">Try Summarizer</a>
+                    <div style="flex:1"></div>
+                    <div class="search" role="search" aria-label="Search site">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 21l-4.35-4.35" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="11" cy="11" r="6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        <input type="search" placeholder="Search notes, events, people" />
+                    </div>
+                </div>
+
+                <div class="feature-grid" aria-hidden="false">
+                    <div class="feature">
+                        <h4>Mentorship Chat</h4>
+                        <p>Connect with seniors and peers in session- or topic-based rooms. Schedule 1:1s and group discussions.</p>
+                    </div>
+                    <div class="feature">
+                        <h4>Daily Updates & Notes</h4>
+                        <p>Centralized dashboard for timetables, lecture notes and announcements. Faculty uploads supported.</p>
+                    </div>
+                    <div class="feature">
+                        <h4>Smart Summarizer</h4>
+                        <p>Upload PPTs, PDFs or articles to auto-generate crisp summaries, highlights, flashcards and quizzes.</p>
+                    </div>
+                </div>
+            </div>
+
+            <aside class="aside" aria-labelledby="aside-heading">
+                <div style="display:flex;justify-content:space-between;align-items:center">
+                    <div>
+                        <div id="aside-heading" style="font-weight:700">Today</div>
+                        <div style="font-size:13px;color:var(--muted)">Quick actions & recent items</div>
+                    </div>
+                    <div style="font-size:12px;color:var(--muted)">UTC</div>
+                </div>
+
+                <div class="card-list" style="margin-top:14px">
+                    <div class="small-card">
+                        <div style="flex:1">
+                            <h5>Ongoing: Lumina 2025</h5>
+                            <p>Virtual hackathon on 6 Nov • Results on 7 Nov after 12:00 PM</p>
+                        </div>
+                        <div style="font-size:12px;color:var(--muted);white-space:nowrap">In progress </div>
+                    </div>
+
+                    <div class="small-card">
+                        <div style="flex:1">
+                            <h5>New notes: DS Lecture Sem 3</h5>
+                            <p>Uploaded by Prof. Ruchika Bala • 4 slides</p>
+                        </div>
+                        <a class="btn" href="updates.html" style="height:36px;padding:6px 10px">Open</a>
+                    </div>
+
+                    <div class="small-card">
+                        <div style="flex:1">
+                            <h5>Try AI Summaries</h5>
+                            <p>Convert long PDFs into 3-minute summaries & quizzes.</p>
+                        </div>
+                        <a class="btn" href="summarizer.html" style="height:36px;padding:6px 10px">Upload</a>
+                    </div>
+                </div>
+            </aside>
+        </section>
+
+        <section style="margin-top:28px">
+            <div style="display:flex;align-items:center;justify-content:space-between">
+                <h3 style="margin:0">Explore features</h3>
+                <div style="color:var(--muted);font-size:13px">Designed for campus communities</div>
+            </div>
+
+            <div style="margin-top:12px;display:grid;grid-template-columns:2fr 1fr;gap:14px">
+                <div class="card-compact">
+                    <h4 style="margin-top:0">Events & Internship Feed</h4>
+                    <p style="color:var(--muted)">A news-style feed for upcoming hackathons, AI summarization for long announcements.</p>
+
+                    <div style="display:flex;gap:10px;margin-top:12px">
+                        <a class="btn" href="events.html">Browse Events</a>
+                        <a class="btn" href="internships.html">Internships</a>
+                    </div>
+                </div>
+
+                <div class="card-compact">
+                    <h4 style="margin-top:0">Community & Security</h4>
+                    <p style="color:var(--muted)">Real-time chats for societies and clubs. Role-based uploads for seniors.</p>
+                    <div style="margin-top:12px">
+                        <a class="btn" href="community.html">Open Community</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+            <div style="display:flex;gap:14px;align-items:center">
+            <div style="font-weight:700">Code Empath</div>
+            <div style="color:var(--muted);font-size:13px">© <span id="year"></span> Student Hub</div>
+        </div>
+        <div style="display:flex;gap:12px;align-items:center">
+            <a class="btn" href="privacy.html">Privacy</a>
+            <a class="btn" href="tos.html">TOS</a>
+        </div>
+    </footer>
+
+    <script>
+        // small utilities for the demo homepage
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // keyboard shortcut: "m" opens mentorship page (demo)
+        document.addEventListener('keydown', function(e){
+            if((e.key === 'm' || e.key === 'M') && !e.metaKey && !e.ctrlKey){
+                window.location.href = 'mentorship.html';
+            }
+        });
+
+        // Accessibility: add skip link support (simple)
+        // This demo file is static; integrate with backend (Firebase/Auth, APIs, HuggingFace/OpenAI) on real implementation.
+        // Theme toggle: toggles .dark on <html> and persists choice
+        (function(){
+            const key = 'ce-theme';
+            const btn = document.getElementById('theme-toggle');
+            const root = document.documentElement;
+
+            function setDark(on){
+                if(on){
+                    root.classList.add('dark');
+                    btn.textContent = '☀️ Light';
+                    btn.setAttribute('aria-pressed','true');
+                } else {
+                    root.classList.remove('dark');
+                    btn.textContent = '🌙 Dark';
+                    btn.setAttribute('aria-pressed','false');
+                }
+                try{ localStorage.setItem(key, on ? 'dark' : 'light'); }catch(e){}
+            }
+
+            // init from preference, OS, or default to light
+            try{
+                const stored = localStorage.getItem(key);
+                if(stored === 'dark') setDark(true);
+                else if(stored === 'light') setDark(false);
+                else if(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) setDark(true);
+                else setDark(false);
+            }catch(e){ setDark(false); }
+
+            btn.addEventListener('click', function(){
+                setDark(document.documentElement.classList.toggle('dark'));
+            });
+        })();
+    </script>
+</body>
+</html>

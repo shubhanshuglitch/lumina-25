@@ -26,6 +26,7 @@ Collaborative Discussion Rooms: Topic-based chat rooms for group study sessions,
 Centralized Dashboard: A single source of truth for daily timetables, lecture notes, and important announcements. Faculty and seniors can easily upload resources.
 
 Smart Summarizer: An AI tool that instantly condenses long PPTs, research papers, and PDF notes into key takeaways, saving valuable study time.
+
 👥 The Team
 
 Krish Malik

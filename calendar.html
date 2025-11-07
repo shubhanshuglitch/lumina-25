@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Calendar — Code Empath</title>
+    <meta name="description" content="Calendar and event scheduler for campus." />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="calendarstyle.css">
+</head>
+<body>
+    <div id="site-header"></div>
+
+    <div class="page-top">
+        <div class="top-inner">
+            <div style="font-weight:700">Calendar</div>
+            <div style="color:var(--muted);font-size:13px">Schedule, reminders and event sync</div>
+            <div style="flex:1"></div>
+            <a class="btn" href="#new">New Event</a>
+        </div>
+    </div>
+
+    <main>
+        <section style="max-width:1100px;margin:20px auto;padding:0 20px;display:grid;grid-template-columns:2fr 1fr;gap:18px">
+            <div class="card-compact">
+                <h3 style="margin-top:0">Month View (placeholder)</h3>
+                <div style="height:420px;border-radius:10px;background:linear-gradient(180deg,rgba(10,20,30,0.02),transparent);display:flex;align-items:center;justify-content:center;color:var(--muted)">Calendar grid placeholder — integrate FullCalendar or similar</div>
+            </div>
+
+            <aside class="aside">
+                <h4 style="margin:0 0 12px">Upcoming</h4>
+                <div class="card-list" style="margin-top:12px">
+                    <div class="small-card"><div style="flex:1"><h5>Lumina 2025</h5><p>Virtual • In progress</p></div><div style="font-size:12px;color:var(--muted);white-space:nowrap">In progress</div></div>
+                    <div class="small-card"><div style="flex:1"><h5>ML Office Hours</h5><p>Today • 4:00 PM</p></div><a class="btn" href="room.html">Join</a></div>
+                </div>
+            </aside>
+        </section>
+    </main>
+
+    <div id="site-footer"></div>
+    <script src="theme.js"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+@import url('indexstyle.css');
+
+/* Calendar page styles */
+.page-top{max-width:1100px;margin:18px auto;padding:12px 20px;background:var(--panel);border-radius:12px;border:1px solid rgba(10,20,30,0.04);box-shadow:var(--shadow)}
+.page-top .top-inner{display:flex;align-items:center;gap:12px}
+
+main .card-compact{padding:16px}
+.aside .small-card{display:flex;justify-content:space-between;align-items:center;padding:12px;border-radius:10px;background:var(--card);box-shadow:var(--shadow)}
+
+@media (max-width:880px){main{grid-template-columns:1fr;gap:18px}.aside{order:2}}

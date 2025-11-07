@@ -1,0 +1,35 @@
+/* mentorshipstyle.css
+   Page-specific styles for Mentorship page. Imports base site theme from indexstyle.css
+*/
+@import url('indexstyle.css');
+
+/* Page-specific layout */
+main{max-width:1200px;margin:28px auto;padding:0 20px}
+
+.mentor-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px;margin-top:12px}
+.mentor-card{background:var(--card);border-radius:12px;padding:16px;border:1px solid rgba(10,20,30,0.04);box-shadow:var(--shadow);display:flex;flex-direction:column}
+.mentor-meta{display:flex;gap:12px;align-items:center}
+.avatar{width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,var(--accent-1),var(--accent-2));color:#041026;font-weight:800}
+
+.room-list{display:flex;flex-direction:column;gap:10px}
+.room{display:flex;justify-content:space-between;align-items:center;padding:12px;border-radius:10px;background:linear-gradient(180deg, rgba(10,20,30,0.01), transparent);border:1px solid rgba(10,20,30,0.04)}
+
+.booking{display:grid;grid-template-columns:1fr;gap:12px}
+
+/* small responsive tweaks */
+@media (max-width:760px){
+    .hero{grid-template-columns:1fr}
+    .mentor-grid{grid-template-columns:1fr}
+}
+
+/* Light/Dark compatibility: we rely on variables in indexstyle.css */
+
+/* subtle highlight for mentor availability */
+.mentor-card .available{display:inline-block;padding:6px 8px;border-radius:999px;background:linear-gradient(90deg,var(--accent-2),var(--accent-1));color:#041026;font-weight:800;font-size:12px}
+
+/* Book button prominence */
+.mentor-card .btn.primary{padding:8px 12px}
+
+/* small visual affordances */
+.mentor-card p{margin:0}
+.search input{width:200px}

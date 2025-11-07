@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Community — Code Empath</title>
+    <meta name="description" content="Community chat and study groups." />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="communitystyles.css">
+</head>
+<body>
+    <div id="site-header"></div>
+
+    <div class="page-top">
+        <div class="top-inner">
+            <div class="search" role="search" aria-label="Search community">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 21l-4.35-4.35" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="11" cy="11" r="6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <input type="search" placeholder="Search rooms, topics, resources" />
+            </div>
+
+            <div class="top-actions">
+                <a class="btn primary" href="room.html">Join Room</a>
+                <a class="btn" href="submit-event.html">Create Room</a>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <section class="hero"><div class="hero-card"><div class="kicker">Community</div><h1>Study groups & casual chats</h1><p class="lead">Create or join rooms, share resources, and build micro-communities across campus.</p>
+            <div class="cta-row"><a class="btn primary" href="#rooms">Join Room</a><a class="btn" href="#create">Create Room</a><div style="flex:1"></div></div>
+            <div class="feature-grid"><div class="feature"><h4>Study Rooms</h4><p>Subject-specific rooms and peer Q&A.</p></div><div class="feature"><h4>Clubs</h4><p>Club channels and announcements.</p></div><div class="feature"><h4>Events</h4><p>Community meetups and socials.</p></div></div>
+        </div>
+        <aside class="aside"><div style="display:flex;justify-content:space-between;align-items:center"><div><div id="aside-heading" style="font-weight:700">Trending Rooms</div><div style="font-size:13px;color:var(--muted)">Active now</div></div><div style="font-size:12px;color:var(--muted)">UTC</div></div>
+            <div class="card-list" style="margin-top:14px"><div class="small-card"><div style="flex:1"><h5>DSA Study Group</h5><p>250 active members</p></div><a class="btn" href="room.html">Join</a></div></div></aside>
+        </section>
+
+        <section id="rooms" style="margin-top:28px"><h3 style="margin:0 0 12px">Open Rooms</h3><div class="room-list"><div class="small-card"><div style="flex:1"><h5>DSA Study Group</h5><p>Discuss problem sets and mock interviews.</p></div><a class="btn" href="room.html">Enter</a></div></div></section>
+    </main>
+
+    <div id="site-footer"></div>
+
+    <script src="theme.js"></script>
+</body>
+</html>

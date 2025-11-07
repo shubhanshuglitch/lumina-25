@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Submit Event — Code Empath</title>
+    <meta name="description" content="Submit a campus event" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="indexstyle.css">
+</head>
+<body>
+    <div id="site-header"></div>
+
+    <main style="max-width:900px;margin:28px auto;padding:0 20px">
+        <section class="card-compact">
+            <h3 style="margin-top:0">Submit an Event</h3>
+            <form>
+                <label>Event Name</label>
+                <input type="text" placeholder="Lumina 2025" style="display:block;width:100%;padding:8px;margin-top:8px;border-radius:8px;border:1px solid rgba(10,20,30,0.06)" />
+                <label style="margin-top:12px">Date & Time</label>
+                <input type="datetime-local" style="display:block;width:100%;padding:8px;margin-top:8px;border-radius:8px;border:1px solid rgba(10,20,30,0.06)" />
+                <label style="margin-top:12px">Details</label>
+                <textarea rows="4" style="display:block;width:100%;padding:8px;margin-top:8px;border-radius:8px;border:1px solid rgba(10,20,30,0.06)"></textarea>
+                <div style="display:flex;gap:8px;margin-top:12px">
+                    <button class="btn primary" type="submit">Submit</button>
+                    <a class="btn" href="events.html">Cancel</a>
+                </div>
+            </form>
+            <div style="margin-top:12px;color:var(--muted)">Submissions will be reviewed by the campus admins.</div>
+        </section>
+    </main>
+
+    <div id="site-footer"></div>
+    <script src="theme.js"></script>
+</body>
+</html>

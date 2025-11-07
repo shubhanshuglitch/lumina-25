@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Updates & Notes — Code Empath</title>
+    <meta name="description" content="Centralized dashboard for timetables, lecture notes and announcements." />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="updatesstylestyle.css">
+</head>
+<body>
+    <div id="site-header"></div>
+
+    <div class="page-top">
+        <div class="top-inner">
+            <div class="search" role="search" aria-label="Search updates">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 21l-4.35-4.35" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="11" cy="11" r="6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <input type="search" placeholder="Search notes, lectures, announcements" />
+            </div>
+
+            <div class="top-actions">
+                <a class="btn primary" href="#upload">Upload Resources</a>
+                <a class="btn" href="#notes">Browse Notes</a>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <section class="hero">
+            <div class="hero-card" role="region" aria-labelledby="hero-heading">
+                <div class="kicker">Updates & Notes</div>
+                <h1 id="hero-heading">Centralized dashboard for timetables, lecture notes and announcements</h1>
+                <p class="lead">Faculty and seniors can upload resources; students can browse timetables, pinned notes, and announcements.</p>
+
+                <div class="cta-row">
+                    <a class="btn primary" href="#upload">Upload Resources</a>
+                    <a class="btn" href="#notes">Browse Notes</a>
+                    <div style="flex:1"></div>
+                    <div class="search" role="search" aria-label="Search updates">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 21l-4.35-4.35" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="11" cy="11" r="6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        <input type="search" placeholder="Search notes, lectures, announcements" />
+                    </div>
+                </div>
+
+                <div class="feature-grid">
+                    <div class="feature"><h4>Timetables</h4><p>Personal and class timetables with reminders.</p></div>
+                    <div class="feature"><h4>Lecture Notes</h4><p>Curated notes uploaded by faculty and seniors.</p></div>
+                    <div class="feature"><h4>Announcements</h4><p>Important campus & course announcements summarized.</p></div>
+                </div>
+            </div>
+
+            <aside class="aside" aria-labelledby="aside-heading">
+                <div style="display:flex;justify-content:space-between;align-items:center">
+                    <div>
+                        <div id="aside-heading" style="font-weight:700">Recent Uploads</div>
+                        <div style="font-size:13px;color:var(--muted)">Latest lecture notes & resources</div>
+                    </div>
+                    <div style="font-size:12px;color:var(--muted)">UTC</div>
+                </div>
+
+                <div class="card-list" style="margin-top:14px">
+                    <div class="small-card"><div style="flex:1"><h5>OS Notes: Week 5</h5><p>Uploaded by Prof. Anand</p></div><a class="btn" href="note.html">Open</a></div>
+                    <div class="small-card"><div style="flex:1"><h5>AI Summary: Paper</h5><p>Auto-summarized by Smart Summarizer</p></div><a class="btn" href="summary-detail.html">View</a></div>
+                </div>
+            </aside>
+        </section>
+
+        <section id="notes" style="margin-top:28px">
+            <h3 style="margin:0 0 12px">Latest Notes</h3>
+                <div class="note-list">
+                <div class="small-card"><div style="flex:1"><h5>DS Lecture 08</h5><p>Uploaded by Prof. Sharma</p></div><a class="btn" href="note.html">Download</a></div>
+                <div class="small-card"><div style="flex:1"><h5>Math Cheat Sheet</h5><p>Uploaded by student volunteers</p></div><a class="btn" href="note.html">Open</a></div>
+            </div>
+        </section>
+
+    </main>
+
+    <div id="site-footer"></div>
+
+    <script src="theme.js"></script>
+</body>
+</html>

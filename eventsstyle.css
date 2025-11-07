@@ -1,0 +1,10 @@
+@import url('indexstyle.css');
+
+/* Events page tweaks */
+main{max-width:1100px;margin:30px auto;padding:0 20px;display:grid;grid-template-columns:1fr 320px;gap:24px}
+.hero-card{padding:22px}
+.event-list .small-card{display:flex;justify-content:space-between;align-items:center;padding:12px;border-radius:10px;background:var(--card);box-shadow:var(--shadow)}
+.aside .small-card .btn{padding:8px 10px}
+
+/* small responsive */
+@media (max-width:880px){main{grid-template-columns:1fr;gap:18px}.aside{order:2}}

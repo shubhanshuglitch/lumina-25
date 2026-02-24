@@ -9,13 +9,21 @@ const Message = require('./models/Message');
 
 const app = express();
 const server = http.createServer(app);
+
+// CORS — allow Vercel frontend + localhost dev
+const allowedOrigins = process.env.CLIENT_URL
+  ? [process.env.CLIENT_URL, 'http://localhost:5173']
+  : ['http://localhost:5173'];
+
+app.use(cors({ origin: allowedOrigins, credentials: true }));
+
 const io = new Server(server, {
-  cors: { origin: '*', methods: ['GET', 'POST'] },
+  cors: { origin: allowedOrigins, methods: ['GET', 'POST'], credentials: true },
 });
 
 // Middleware
-app.use(cors());
-app.use(express.json());
+app.set('trust proxy', 1);
+app.use(express.json({ limit: '10mb' }));
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 // API Routes

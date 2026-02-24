@@ -9,6 +9,8 @@ import {
     Smile, Paperclip, MessageSquare
 } from 'lucide-react';
 
+const SOCKET_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+
 const RoomPage = () => {
     const { id } = useParams();
     const { user } = useAuth();
@@ -24,7 +26,7 @@ const RoomPage = () => {
         fetchRoom();
 
         // Initialize socket connection
-        const newSocket = io('http://localhost:5000');
+        const newSocket = io(SOCKET_URL);
         setSocket(newSocket);
 
         newSocket.emit('join-room', id);

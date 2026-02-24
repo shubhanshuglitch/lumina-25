@@ -7,6 +7,8 @@ import {
     Plus, Filter, X, Sparkles
 } from 'lucide-react';
 
+const API_URL = import.meta.env.VITE_API_URL || '';
+
 const NoteCard = ({ note }) => (
     <div className="card hover:shadow-2xl transition-all group">
         <div className="flex items-start justify-between mb-4">
@@ -34,7 +36,7 @@ const NoteCard = ({ note }) => (
 
         <div className="flex gap-2">
             <a
-                href={`http://localhost:5000${note.fileUrl}`}
+                href={`${API_URL}${note.fileUrl}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn flex-1 justify-center text-xs"
@@ -42,7 +44,7 @@ const NoteCard = ({ note }) => (
                 <ExternalLink size={14} /> View
             </a>
             <a
-                href={`http://localhost:5000/api/notes/${note._id}/download`}
+                href={`${API_URL}/api/notes/${note._id}/download`}
                 className="btn primary flex-1 justify-center text-xs shadow-none"
             >
                 <Download size={14} /> Download

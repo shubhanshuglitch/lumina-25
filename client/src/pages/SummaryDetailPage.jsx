@@ -6,6 +6,8 @@ import {
     Brain, Sparkles, BookOpen, ExternalLink, RefreshCw
 } from 'lucide-react';
 
+const API_URL = import.meta.env.VITE_API_URL || '';
+
 const SummaryDetailPage = () => {
     const { id } = useParams();
     const [summary, setSummary] = useState(null);
@@ -61,7 +63,7 @@ const SummaryDetailPage = () => {
                                 </div>
                             </div>
                             <a
-                                href={`http://localhost:5000${summary.originalFileUrl}`}
+                                href={`${API_URL}${summary.originalFileUrl}`}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="btn bg-[var(--glass)] hover:bg-[var(--border)]"

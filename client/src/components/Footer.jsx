@@ -20,13 +20,13 @@ const Footer = () => {
                             Your smart campus hub for mentorship, notes, events, and AI-powered study tools.
                         </p>
                         <div className="flex items-center gap-3">
-                            <a href="#" className="w-8 h-8 rounded-lg bg-[var(--glass)] flex items-center justify-center text-[var(--muted)] hover:text-[var(--text)] hover:bg-[var(--glass-2)] transition-all">
+                            <a href="https://github.com/shubhanshuglitch" className="w-8 h-8 rounded-lg bg-[var(--glass)] flex items-center justify-center text-[var(--muted)] hover:text-[var(--text)] hover:bg-[var(--glass-2)] transition-all">
                                 <Github size={16} />
                             </a>
-                            <a href="#" className="w-8 h-8 rounded-lg bg-[var(--glass)] flex items-center justify-center text-[var(--muted)] hover:text-[var(--text)] hover:bg-[var(--glass-2)] transition-all">
+                            <a href="https://x.com/Shubhan50717792" className="w-8 h-8 rounded-lg bg-[var(--glass)] flex items-center justify-center text-[var(--muted)] hover:text-[var(--text)] hover:bg-[var(--glass-2)] transition-all">
                                 <Twitter size={16} />
                             </a>
-                            <a href="#" className="w-8 h-8 rounded-lg bg-[var(--glass)] flex items-center justify-center text-[var(--muted)] hover:text-[var(--text)] hover:bg-[var(--glass-2)] transition-all">
+                            <a href="mailto:vermask27122811@gmail.com" className="w-8 h-8 rounded-lg bg-[var(--glass)] flex items-center justify-center text-[var(--muted)] hover:text-[var(--text)] hover:bg-[var(--glass-2)] transition-all">
                                 <MessageCircle size={16} />
                             </a>
                         </div>

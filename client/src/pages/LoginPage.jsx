@@ -33,7 +33,11 @@ const LoginPage = () => {
             }
             navigate('/');
         } catch (err) {
-            setError(err.response?.data?.error || 'Authentication failed. Please try again.');
+            const msg = err.response?.data?.error
+              || err.message
+              || 'Authentication failed. Please try again.';
+            setError(msg);
+            console.error('Auth error:', err);
         } finally {
             setLoading(false);
         }

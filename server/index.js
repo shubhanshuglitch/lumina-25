@@ -11,14 +11,25 @@ const app = express();
 const server = http.createServer(app);
 
 // CORS — allow Vercel frontend + localhost dev
-const allowedOrigins = process.env.CLIENT_URL
-  ? [process.env.CLIENT_URL, 'http://localhost:5173']
-  : ['http://localhost:5173'];
+const allowedOrigins = [
+  'http://localhost:5173',
+  process.env.CLIENT_URL,
+].filter(Boolean);
 
-app.use(cors({ origin: allowedOrigins, credentials: true }));
+app.use(cors({
+  origin: function (origin, callback) {
+    // Allow requests with no origin (mobile apps, curl, etc.)
+    if (!origin) return callback(null, true);
+    if (allowedOrigins.some(o => origin === o) || origin.endsWith('.vercel.app')) {
+      return callback(null, true);
+    }
+    callback(null, true); // Allow all for now — tighten after confirming it works
+  },
+  credentials: true,
+}));
 
 const io = new Server(server, {
-  cors: { origin: allowedOrigins, methods: ['GET', 'POST'], credentials: true },
+  cors: { origin: '*', methods: ['GET', 'POST'], credentials: true },
 });
 
 // Middleware
